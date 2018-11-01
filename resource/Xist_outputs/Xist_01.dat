@@ -1,0 +1,462 @@
+HTRI Incremental Shell-and-Tube Program Xist Ver. 6.00        11/01/18  17:50 Serial Number 1500213793     Page No-    1
+Rating-Horizontal Multipass Flow          Problem-                                                                      
+TEMA BFU Shell with Segmental Baffles        Case-                                                                      
+---Program Messages--------------------------------------------------SI  Units------------------------------------------
+   This copy of the program released to the following HTRI Member Company:
+                  sjtu                                                    
+      For use by: jpf                                                     
+
+***** WARNING MESSAGES ***** CALCULATIONS CONTINUE *********************************************************************
+ 
+The physical properties of the cold fluid have been extrapolated beyond the valid temperature range.  Check calculated
+values.
+ 
+Based on the maximum of flooded nozzle and weir flow, the calculated condensate level is 16.2 percent of the shell
+diameter. At this level, the area of the bundle submerged is    7 %. Consider using a larger outlet nozzle if condensate
+drainage relies upon gravity only such as with a condensate accumulator and pressure equalizing line.
+ 
+NOTE-The U-bend length exceeds the TEMA maximum span, which can lead to flow-induced vibration problems. Consider adding
+stiffness to U-bend region of the bundle.
+ 
+WARNING-Crossflow velocity exceeds critical velocity, indicating probability of fluidelastic instability and
+flow-induced vibration damage. If present, fluidelastic instability can lead to large amplitude vibration and tube
+damage.
+ 
+WARNING-Crossflow velocity at baffle tip exceeds critical velocity, indicating a probability of fluidelastic instability
+and flow-induced vibration damage. If present, fluidelastic instability can lead to large amplitude vibration and tube
+damage.
+ 
+NOTE-Tube vibration from vortex shedding is possible. Check the crossflow-induced vibration amplitude on Line 26 of the
+Vibration Analysis report for an asterisk. If no asterisk prints, probability of tube damage is low.
+ 
+WARNING-Bundle entrance velocity exceeds critical velocity, indicating a probability of fluidelastic instability and
+flow-induced vibration damage. If present, fluidelastic instability can lead to large amplitude vibration and tube
+damage.  
+ 
+WARNING-Shell entrance velocity exceeds critical velocity, indicating a probability of fluidelastic instability and
+flow-induced vibration damage. If present, fluidelastic instability can lead to large amplitude vibration and tube
+damage.   
+ 
+WARNING-Bundle exit velocity exceeds critical velocity, indicating a probability of fluidelastic instability and
+flow-induced vibration damage. If present, fluidelastic instability can lead to large amplitude vibration and tube
+damage.
+ 
+WARNING-Shell exit velocity exceeds critical velocity, indicating a probability of fluidelastic instability and
+flow-induced vibration damage. If present, fluidelastic instability can lead to large amplitude vibration and tube
+damage.
+ 
+WARNING-Shell entrance rho-v-squared exceeds TEMA maximum recommended value of  5950 kg/m s2 (4000 lb/ft sec2).
+ 
+Xvib can be used for a more detailed analysis of individual tubes in the bundle.
+ 
+The inlet unsupported span length (inlet baffle spacing + central baffle spacing) exceeds the TEMA maximum unsupported
+span length.
+ 
+The central unsupported span length (twice the central baffle spacing) exceeds the TEMA maximum unsupported span length.
+ 
+The outlet unsupported span length (outlet baffle spacing + central baffle spacing) exceeds the TEMA maximum unsupported
+span length.
+
+HTRI Incremental Shell-and-Tube Program Xist Ver. 6.00        11/01/18  17:50 Serial Number 1500213793     Page No-    2
+Rating-Horizontal Multipass Flow          Problem-                                                                      
+TEMA BFU Shell with Segmental Baffles        Case-                                                                      
+---Program Messages--------------------------------------------------SI  Units------------------------------------------
+   This copy of the program released to the following HTRI Member Company:
+                  sjtu                                                    
+      For use by: jpf                                                     
+
+***** WARNING MESSAGES ***** CALCULATIONS CONTINUE *********************************************************************
+ 
+A temperature pinch exists in one or more incremental log mean temperature difference calculations.  Check the
+incremental temperature monitor for possible difficulties.
+ 
+An internal temperature cross exists in the exchanger. The program handles the reverse heat flow properly in the
+calculations, but you may want to consider changing the terminal process conditions to avoid the internal temperature
+cross.
+
+HTRI Incremental Shell-and-Tube Program Xist Ver. 6.00        11/01/18  17:50 Serial Number 1500213793     Page No-    3
+Rating-Horizontal Multipass Flow          Problem-                                                                      
+TEMA BFU Shell with Segmental Baffles        Case-                                                                      
+---Final Results-----------------------------------------------------SI  Units------------------------------------------
+   This copy of the program released to the following HTRI Member Company:
+                  sjtu                                                    
+      For use by: jpf                                                     
+01       **** Process Data ****         HOT Shellside     COLD Tubeside   ******      Shellside Performance    ****** 01
+02 Fluid Name                            shellSteam        tubeLiquid     Nom  Vel,  X-Flow/Window      10.98/  11.38 02
+03 Fluid Condition                       COND.  VAPOR      SENS. LIQUID                                               03
+04 Total Flow Rate             (kg/s)         127.810          1305.570   Flow Fractions for Vapor Phase              04
+05                                      In   /  Out       In   /  Out     A=0.211  B=0.517  C=0.079  E=0.194  F=    0 05
+06 Weight Fraction Vapor         (--)  0.479 /      0        0*/      0                                               06
+07 Temperature                (deg C)  231.1 /  222.4*   211.3*/  230.0   ** Shellside  Heat Transfer Corrections *** 07
+08 Temperature, average/skin  (deg C)   226.8/  221.4     220.7/  222.0      Total       Beta   Gamma    End     Fin  08
+09 Pressure, inlet/average      (kPa) 2874.00/2660.61   9100.00/8953.38      0.986      0.919   1.072   0.976   1.000 09
+10 Pressure Drop, total/allow   (kPa)  426.78/      0    293.25/      0   *** Pressure Drops ****  (Percent of Total) 10
+11 Velocity, mid/max allow      (m/s)   14.12/   7.28      2.74/   2.45    Cross Window  Ends   Nozzle  Shell    Tube 11
+12 Mole Fraction Inert                              0                      65.57  10.70  19.58  Inlet    4.44   49.15 12
+13 Average Film Coef         (W/m2 C)        13059.63          20042.54   MOMENTUM       -0.84  Outlet   0.56   32.19 13
+14 Heat Transfer Safety Factor   (--)           1.000             1.000   ****     Two-Phase Parameters     ******    14
+15 Fouling Resistance        (m2 C/W)               0                 0   Method     Inlet    Center   Outlet  Mix F  15
+16         ****    Overall Performance Data    ****                       PRORATION Shear    Trans    Gravity  0.9999 16
+17 Overall Coef, Reqd/Clean/Actual      (W/m2 C)      0/5674.15/5674.15                                               17
+18 Heat Duty, Calculated/Specified    (MegaWatts)   112.4568/         0   **** H.T. Parameters ****    Shell     Tube 18
+19 Effective Overall Temperature Difference (deg C)            0          Overall Wall Correction               1.000 19
+20 Effective MTD = (MTD)(F/G/H)(DELTA) = ( -0.25)(0.980)(    0) (deg C)   Midpoint      Prandtl No.     0.44     0.85 20
+21                                                                        Midpoint      Reynolds No    57409   286131 21
+22                                                                        Bundle Inlet  Reynolds No    79901   253878 22
+23                                                                        Bundle Outlet Reynolds No    38814   323748 23
+24                                                                        Fouling Layer        (mm)        0        0 24
+25                                                                        *** Thermal Resistances ****  (Pct Overall) 25
+26 ------------ See Program Messages for Warning Messages -------------    Shell    Tube   Fouling   Metal   Over Des 26
+27                                                                         43.45   34.91        0   21.645    100.000 27
+28                                                                        Total Fouling Resistance                  0 28
+29          **** Shell Construction Information ****                      Differential Resistance                   0 29
+30 TEMA Shell Type            BFU  Shell ID         (mm) 2300.000  **** Shell Nozzles ****                     Liquid 30
+31 Shells Series  1  Parallel   1  Total Area       (m2)     2689  Inlet at channel end-YES     Inlet  Outlet  Outlet 31
+32 Passes Shell   2  Tube       2  Eff. Area  (m2/shell)   2539.3  Number at Each Position          1       1         32
+33 Shell Orientation Angle      0  (Deg.)                          Diameter              (mm)  419.10  295.30         33
+34 Impingement Plate Present   NO                                  Velocity             (m/s)   31.67    2.21         34
+35 Pairs Seal Strips  9  F-Stream  Seal Rods       0  (mm) No.  0  Pressure Drop        (kPa)   18.96    2.40         35
+36 Shell Expansion Joint       NO  Full Baffle at U-Bend       NO  Height Under Nozzle   (mm)  161.90  161.90         36
+37 Weight Estimation Wet/Dry/Bund  109225/ 74598/ 46390(kg/shell)  Nozzle R-V-SQ    (kg/m s2)   29345    4118         37
+38                **** Baffle Information ****                     Shell Ent.       (kg/m s2)    9834     714         38
+39 Type      PARALLEL   SEGMENTAL  Baffle Cut (Pct Dia)     25.00                                              Liquid 39
+40 Crosspasses/Shellpass        8   No. (Pct Area)   (mm) to C.L.  *Tube Nozzles   (RADIAL)     Inlet  Outlet  Outlet 40
+41 Central Spacing  (mm)  800.000    1    19.963          575.000  Diameter              (mm)  333.35  333.35         41
+42 Inlet/Outlet     (mm)  915.341    2         0                0  Velocity             (m/s)   17.51   18.03         42
+43 Turn Spacing     (mm) 1182.496    3         0                0  Pressure Drop        (kPa)  144.12   94.39         43
+44 Baffle Thickness (mm)   19.050  Baffle Overlap   (mm)                                                              44
+45 Insulated Long Baffle      YES                                                                                     45
+46                 **** Tube Information ****                                                                         46
+47 Tube Type                PLAIN  Tubecount per Shell       6576                                                     47
+48 Overall   Length  (m)    6.833  Pct Tubes Removed (BOTH)  4.34                                                     48
+49 Effective Length  (m)    6.452  Outside Diameter  (mm) 19.0500                                                     49
+50 Total Tubesheet  (mm)   380.60  Wall Thickness    (mm)  1.8000  **** Diametral Clearances  (mm) ****               50
+51 Area Ratio (out/in)      1.233  Pitch (mm) 25.0000 Ratio 1.312  Baffle-to-Shell Bundle-to-Shell Tube-to-Bafflehole 51
+52 Tube metal  Carbon steel        Tube Pattern (Degrees)      30      11.1125         80.3398            0.3969      52
+
+HTRI Incremental Shell-and-Tube Program Xist Ver. 6.00        11/01/18  17:50 Serial Number 1500213793     Page No-    4
+Rating-Horizontal Multipass Flow          Problem-                                                                      
+TEMA BFU Shell with Segmental Baffles        Case-                                                                      
+---Supplementary Results---------------------------------------------SI  Units------------------------------------------
+   This copy of the program released to the following HTRI Member Company:
+                  sjtu                                                    
+      For use by: jpf                                                     
+01 Shell Mean metal temperature                                                                                         
+02                  222.49                                                                                              
+03 Tube pass Mean metal temperature                                                                                     
+04                  Inside          Outside      Radial Mean                                                            
+04 --------- ------------------------------------------------                                                           
+06      1           213.05           213.18           213.12                                                            
+07      2           231.52           231.37           231.44                                                            
+
+HTRI Incremental Shell-and-Tube Program Xist Ver. 6.00        11/01/18  17:50 Serial Number 1500213793     Page No-    5
+Rating-Horizontal Multipass Flow          Problem-                                                                      
+TEMA BFU Shell with Segmental Baffles        Case-                                                                      
+---Physical Properties-----------------------------------------------SI  Units------------------------------------------
+   This copy of the program released to the following HTRI Member Company:
+                  sjtu                                                    
+      For use by: jpf                                                     
+  1                                         Hot Fluid                                   Cold Fluid                     1
+  2                           **** Compositions and VLE K-Values ****      **** Compositions and VLE K-Values ****     2
+  3                          Inlet           Midpoint           Outlet    Inlet           Midpoint     Wall  Outlet    3
+  4 Temperature     (deg C)  231.11   229.03   226.89   224.69   222.41   211.34   216.00   220.67   222.02   230.00   4
+  5 Pressure          (kPa) 2874.00  2767.31  2660.61  2553.92  2447.22  9100.00  9026.69  8953.38  8953.38  8806.75   5
+  6            Component                  Mole Fractions                               Mole Fractions                  6
+  7 Vapor          1         1.0000   1.0000   1.0000   1.0000   1.0000                                                7
+  8                2                                                                                                   8
+  9                3                                                                                                   9
+ 10                4                                                                                                  10
+ 11                5                                                                                                  11
+ 12 Liquid         1         1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000  12
+ 13                2                                                                                                  13
+ 14                3                                                                                                  14
+ 15                4                                                                                                  15
+ 16                5                                                                                                  16
+ 17                                 Vapor-Equilibrium K-Values                   Vapor-Equilibrium K-Values           17
+ 18                1         1.0000   1.0000   1.0000   1.0000   1.0000                                               18
+ 19                2                                                                                                  19
+ 20                3                                                                                                  20
+ 21                4                                                                                                  21
+ 22                5                                                                                                  22
+ 23                                                                                                                   23
+ 24                        Hot Fluid         (1) Water (P  (2)          Cold Fluid        (1) Water (P  (2)           24
+ 25 Component Names            (3)           (4)           (5)              (3)           (4)           (5)           25
+ 26                                                                                                                   26
+ 27                         **** Local Mixture Physical Properties ****  **** Local Mixture Physical Properties ****  27
+ 28                                         Hot Fluid                                   Cold Fluid                    28
+ 29                          Inlet           Midpoint           Outlet    Inlet           Midpoint           Outlet   29
+ 30 Temperature     (deg C)  231.11   229.03   226.89   224.69   222.41   211.34   216.00   220.67   222.02   230.00  30
+ 31 Pressure          (kPa) 2874.00  2767.31  2660.61  2553.92  2447.22  9100.00  9026.69  8953.38  8953.38  8806.75  31
+ 32 Weight Fr. Vapor   (--)  0.4789   0.3592   0.2395   0.1197        0        0        0        0        0        0  32
+ 33                                                                                                                   33
+ 34                             **** Vapor Mixture Properties ****           **** Vapor Mixture Properties ****       34
+ 35 Density         (kg/m3)14.27119 13.74141 13.21296 12.68581 12.15993                                               35
+ 36 Viscosity     (mN s/m2) 0.01746  0.01737  0.01729  0.01720  0.01710                                               36
+ 37 Thermal Conductivity                                                                                              37
+ 38                 (W/m C)  0.0363   0.0361   0.0359   0.0357   0.0354                                               38
+ 39 Heat Capacity (kJ/kg C)  3.4485   3.4033   3.3599   3.3152   3.2690                                               39
+ 40 Molecular Wt.  (kg/mol)    18.0     18.0     18.0     18.0     18.0                                               40
+ 41                                                                                                                   41
+ 42                            **** Liquid Mixture Properties ****          **** Liquid Mixture Properties ****       42
+ 43 Density         (kg/m3)  828.33   831.15   834.04   836.97   839.98   854.10   848.24   842.25   840.49   829.84  43
+ 44 Viscosity     (mN s/m2)  0.1158   0.1168   0.1179   0.1190   0.1202   0.1264   0.1237   0.1211   0.1204   0.1164  44
+ 45 Thermal Conductivity                                                                                              45
+ 46                 (W/m C)  0.6434   0.6447   0.6460   0.6473   0.6486   0.6541   0.6519   0.6495   0.6488   0.6441  46
+ 47 Heat Capacity (kJ/kg C)  4.6932   4.6765   4.6598   4.6431   4.6263   4.5516   4.5818   4.6138   4.6234   4.6842  47
+ 48 Molecular Wt.  (kg/mol)    18.0     18.0     18.0     18.0     18.0     18.0     18.0     18.0     18.0     18.0  48
+ 49                                                                                                                   49
+ 50 Latent Heat     (kJ/kg) 1778.43  1788.13  1798.02  1808.13  1818.47                                               50
+ 51 Surface Tens.    (mN/m)  30.332   30.796   31.275   31.768   32.277   34.749   33.708   32.666   32.365   30.580  51
+
+HTRI Xist Ver. 6.00       11/01/18  17:50 Serial Number 1500213793 Page No-  6
+Problem-                                                                      
+Case-                                                                         
+Rating-Horizontal Multipass Flow TEMA BFU Shell with Segmental Baffles        
+---Flow-Induced Vibration Analysis-----------------SI  Units------------------
+   This copy of the program released to the following HTRI Member Company:
+                  sjtu                                                    
+      For use by: jpf                                                     
+01 (Level  2.30) SHELLSIDE CONDITION-        COND.  VAPOR
+02 Axial Stress Loading  - - - - - - - - - - - - - - - - - - - - -
+03        0      (MPa)
+04 Beta  -----  Added Mass Factor        4.748  ------   1.5436
+05 ------POSITION IN THE BUNDLE------- INLET    CENTER   U-BEND
+06 Length for natural frequency   (m)   1.715    1.600    5.057
+07   Length/TEMA maximum span    (--)   1.126*   1.050*   2.494*
+08   Number of spans             (--)      4        4        1
+09 Tube natural frequency        (Hz)   19.59    16.61+    2.07
+10 Shell acoustic frequency      (Hz)     ---      ---      ---
+11  - Flow Velocities  - - - - - - - - - - - - - - - - - - - - - -
+12 Window parallel velocity     (m/s)   15.15     0.52     0.52
+13 Bundle crossflow velocity    (m/s)   10.49*    0.42     0.28
+14 Bundle/shell velocity        (m/s)    9.35     0.38     0.25
+15  - Fluidelastic Instability Check - - - - - - - - - - - - - - -
+16 Log decrement                 (--)  0.0421   0.0662   0.0380
+17 Critical Velocity            (m/s)    2.89     0.91     0.60
+18 Baffle tip cross veloc. ratio (--)   3.786*   0.484    0.485
+19 Average crossflow veloc. ratio(--)   3.637*   0.465    0.466
+20 - Acoustic Vibration Check  - - - - - - - - - - - - - - - - - -
+21 Vortex shedding ratio         (--)     ---      ---      ---
+22 Chen Number                   (--)     ---      ---      ---
+23 Turbulent buffeting ratio     (--)     ---      ---      ---
+24 - Tube Vibration Check  - - - - - - - - - - - - - - - - - - - -
+25 Vortex shedding ratio         (--)   7.200*   0.290    1.532*
+26                                        ---      ---      ---
+27 Parallel flow amplitude       (mm)   0.074    0.003    0.024
+28 Crossflow amplitude           (mm)   0.806*   0.193    7.987*
+29                                        ---      ---      ---
+30 Tube gap                      (mm)   5.950    5.950    5.950
+31 Crossflow RHO-V-SQ       (kg/m s2)    3221      152       66
+32 - Bundle Entrance/Exit  - - - - - - - - - - - - - - - - - - - -
+33    (Analysis at first tube row)       Entrance        Exit
+34 Fluidelastic instability ratio(--)     6.499*        1.083*
+35 Vortex Shedding ratio         (--)     9.144*        0.316
+36 Crossflow amplitude           (mm)     0.806*        0.309
+37 Crossflow velocity           (m/s)    13.328*        0.461*
+38                               (mm)
+39 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+40 Shell Entrance/Exit Parameters        Entrance        Exit
+41 Impingement plate                       NO             --
+42 Flow Area                    (m2)        0.2383        0.1645
+43 Velocity                    (m/s)       18.3*          0.9*
+44 RHO-V-SQ                (kg/m s2)        9834*          714
+45 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+46 TEMA BFU   Shell with      PARALLEL   SEGMENTAL baffles
+47
+48 PLAIN   Carbon steel       Tubes   19.0500 Diameter  (mm) 30 Degree layout
+49 Pitch ratio   1.3123
+46 - Program Messages  - - - - - - - - -**See Program Messages***-
++ Frequency ratios are based upon lowest natural or acoustic frequency
+  omitting the U-bend.
+* Asterisked items exceed a conservative lower limit for vibration-free
+  design. A review of your case using the procedure described in help may
+  indicate that no vibration problem is likely.
+
+HTRI Incremental Shell-and-Tube Program Xist Ver. 6.00        11/01/18  17:50 Serial Number 1500213793     Page No-    7
+Rating-Horizontal Multipass Flow          Problem-                                                                      
+TEMA BFU Shell with Segmental Baffles        Case-                                                                      
+---Input Data Reprint------------------------------------------------SI  Units------------------------------------------
+   This copy of the program released to the following HTRI Member Company:
+                  sjtu                                                    
+      For use by: jpf                                                     
+
+  CONT                                          Control data (required)                           
+Calculation type                                       ---   Data input units system                                  1 
+Hot fluid placement                                    ---                                                              
+
+  HPRO                                     Hot fluid process data (required)                      
+Total flow rate                                     127.81   Allowable pressure drop                                --- 
+Weight fraction vapor at inlet                      0.4789   Fouling resistance based on area of side                 0 
+Weight fraction vapor at outlet                          0   Fouling layer thickness                                --- 
+Temperature at inlet                                231.11   Design pressure                                        --- 
+Temperature at outlet                                  ---   Design temperature                                     --- 
+Absolute pressure at inlet                            2874   Fluid condition                                          1 
+
+  CPRO                                     Cold fluid process data (required)                     
+Total flow rate                                    1305.57   Allowable pressure drop                                --- 
+Weight fraction vapor at inlet                           0   Fouling resistance based on area of side                 0 
+Weight fraction vapor at outlet                          0   Fouling layer thickness                                --- 
+Temperature at inlet                                   ---   Design pressure                                        --- 
+Temperature at outlet                                 230.   Design temperature                                     --- 
+Absolute pressure at inlet                            9100   Fluid condition                                          2 
+
+  SHEL                                      Shell and nozzle data (required)                      
+TEMA alphanumeric shell description                    BFU   First tubepass in cocurrent flow                       --- 
+Shell orientation angle                                  0   Number of sealing strip pairs                          --- 
+Number of shells/bays in parallel/unit                 ---   Nozzle inside diameter (shellside,inlet)          419.1011 
+Number of shells/bays in series/unit                   ---   Nozzle inside diameter (shellside,outlet)          295.301 
+Shell inside diameter                                 2300   Tubeside entry type                                    --- 
+Impingement device                                       2   Nozzle inside diameter (tubeside,inlet)             333.35 
+Number of tubepasses                                     2   Nozzle inside diameter (tubeside,outlet)            333.35 
+
+  TUBE                                        Tube information (required)                         
+Tube type number                                         1   Tube material thermal conductivity                     --- 
+Tube OD                                              19.05   Tube pitch                                              25 
+Tube wall thickness                                    1.8   Longitudinal pitch                                     --- 
+Type                                                   ---   Tube length                                          6.096 
+Automatic tube code                                    ---   Tube pattern                                            30 
+Tube material code                                     ---   Tubecount/shell                                       6576 
+
+  BAFF                            Baffle data for shell-and-tube exchangers (required)            
+Type                                                     1   Baffle cut, pct shell ID (regn 1)                       25 
+No-Tube-in-the-Window Segmental Baffle                 ---   Number of crosspasses/shell pass (regn 1)              --- 
+Baff cut orient with respect to inlet nozz ctrline       1   Central baffle spacing (regn 1)                        800 
+Inlet nozzle location for horizontal shells              0                                                              
+
+  DGEO                            Supplementary shell geometry design data (optional)             
+Percent excess area for design                         ---   ** Presently not used **                               --- 
+Minimum shell diameter                                 ---   Nozzle location                                          1 
+Maximum shell diameter                                 ---                                                              
+
+HTRI Incremental Shell-and-Tube Program Xist Ver. 6.00        11/01/18  17:50 Serial Number 1500213793     Page No-    8
+Rating-Horizontal Multipass Flow          Problem-                                                                      
+TEMA BFU Shell with Segmental Baffles        Case-                                                                      
+---Input Data Reprint------------------------------------------------SI  Units------------------------------------------
+   This copy of the program released to the following HTRI Member Company:
+                  sjtu                                                    
+      For use by: jpf                                                     
+
+  OGEO                           Supplementary shell-and-tube geometry data (optional)            
+Exchanger style                                        ---   Double tubesheet                                       --- 
+Floating head support plate present                    ---   Shell expansion joint                                  --- 
+U-tube nozz locat                                      ---   Windows cut out of baffle                              --- 
+Full support baffle at U-bend                          ---   Baffle thickness at tube hole                          --- 
+Distance from tangent point to last baffle             ---   Window net area, pct of total net area                 --- 
+Shellside inlet nozzle at channel end                    Y   Double segmental baffle overlap                        --- 
+Tube material elastic modulus                          ---   Tubes to remove for tie rods                            -1 
+Tube material density                                  ---   Force symmetric tube layout                              Y 
+Total tubesheet thickness                              ---   Tubepass layout code                                     3 
+Tubesheet allowable stress                             ---   First tubepass location code                             6 
+
+  CLER                          Clearances, passlane, and flow blockage data (optional)           
+Block A-stream flow path                               ---   Tube-to-shell height under nozz (inlet)              161.9 
+Block E-stream flow path                               ---   Tube-to-shell height under nozz (opp-inlet)          161.9 
+Block F-stream flow path                               ---   Tube-to-shell height under nozz (liqout)               --- 
+Baffle clear type                                      ---   Number passlanes parallel to crossflow                 --- 
+Tube-to-baffle diametral clearance                     ---   Number passlanes perpendicular to crossflow            --- 
+Baffle-to-shell diametral clearance                    ---   Width of parallel passlanes                           38.1 
+Bundle-to-shell diametral clearance                80.3398                                                              
+
+  SAFE                           Heat transfer coefficient and safety factor (optional)           
+Sensible liquid HTC (hot)                              ---   Phase change HTC (cold)                                --- 
+Phase change HTC (hot)                                 ---   Sensible gas HTC (cold)                                --- 
+Sensible gas HTC (hot)                                 ---   HTC multiplier (hot)                                     1 
+Sensible liquid HTC (cold)                             ---   HTC multiplier (cold)                                    1 
+
+  NOZZ                                    Nozzle specification data (optional)                    
+Number at each position (shellside,inlet)              ---   Distance from nozzle to tubesheet (inlet)              --- 
+Number at each position (shellside,outlet)             ---   Distance from nozzle to tubesheet (opp-inlet)          --- 
+Number at each position (tubeside,inlet)               ---   Distance from nozzle to tubesheet (liqout)             --- 
+Number at each position (tubeside,outlet)              ---   Nozzle size data file name (shellside)01-ANSI_B36_10.TABLE 
+Liquid outlet nozzle provided (shellside)              ---   Nozzle schedule in file (shellside)                 Sch 60 
+Nozzle inside diameter (shellside,liqout)              ---   Nozzle size data file name (tubeside) 01-ANSI_B36_10.TABLE 
+Liquid outlet nozzle provided (tubeside)               ---   Nozzle schedule in file (tubeside)                  Sch 40 
+Nozzle inside diameter (tubeside,liqout)               ---   Nozzle location on shell (shellside,inlet)               3 
+** Presently not used **                               ---   Nozzle location on shell (shellside,outlet)              3 
+** Presently not used **                               ---   Nozzle location on shell (shellside,liqout)            --- 
+** Presently not used **                               ---   Nozzle location on shell (tubeside,inlet)                2 
+** Presently not used **                               ---   Nozzle location on shell (tubeside,outlet)               2 
+** Presently not used **                                -1                                                              
+
+  HFLU                                      Hot fluid property control data                       
+Fluid name                                      shellSteam   Units for quantity                                       3 
+Number of components                                     1*                                                             
+
+HTRI Incremental Shell-and-Tube Program Xist Ver. 6.00        11/01/18  17:50 Serial Number 1500213793     Page No-    9
+Rating-Horizontal Multipass Flow          Problem-                                                                      
+TEMA BFU Shell with Segmental Baffles        Case-                                                                      
+---Input Data Reprint------------------------------------------------SI  Units------------------------------------------
+   This copy of the program released to the following HTRI Member Company:
+                  sjtu                                                    
+      For use by: jpf                                                     
+
+  HCMP                                 Hot fluid individual component description                 
+Component number                                          1                                                             
+Component name                                    Water (Pr                                                             
+Component quantity in feed                              ---                                                             
+Component phase code                                    ---                                                             
+Data bank fluid code                                   1001                                                             
+
+  CFLU                                      Cold fluid property control data                      
+Fluid name                                      tubeLiquid   Units for quantity                                       3 
+Number of components                                     1*                                                             
+
+  CCMP                                Cold fluid individual component description                 
+Component number                                          1                                                             
+Component name                                    Water (Pr                                                             
+Component quantity in feed                              ---                                                             
+Component phase code                                    ---                                                             
+Data bank fluid code                                   1001                                                             
+
+HTRI Incremental Shell-and-Tube Program Xist Ver. 6.00        11/01/18  17:50 Serial Number 1500213793     Page No-   10
+Rating-Horizontal Multipass Flow          Problem-                                                                      
+TEMA BFU Shell with Segmental Baffles        Case-                                                                      
+---Summary Printout--------------------------------------------------SI  Units------------------------------------------
+   This copy of the program released to the following HTRI Member Company:
+                  sjtu                                                    
+      For use by: jpf                                                     
+Case identification                                                                                                     
+Shell Information                                                                                                       
+ Series/Parallel     1/   1                                                                                             
+ Total Surface Area      2689                                                                                           
+ Shellside Fluid         HOT                                                                                            
+ Shell Type            BFU                                                                                              
+ Shell Orientation        0                                                                                             
+ Shell ID             2300.000                                                                                          
+ Baffle Type         SEGMENTAL                                                                                          
+   Orientation,          PARAL                                                                                          
+           Cut          25.000                                                                                          
+  Central Spacing     800.000                                                                                           
+ Number Crosspasses       8                                                                                             
+Tube Information                                                                                                        
+ Tube Type             PLAIN                                                                                            
+ Number Tubepasses        2                                                                                             
+ Number of Tubes        6576                                                                                            
+ Tube Length Overall     6.833                                                                                          
+ Tube OD               19.0500                                                                                          
+ Tube Layout Angle       30                                                                                             
+ Pitch Ratio            1.312                                                                                           
+Temperature, In/Out                                                                                                     
+ Shellside            231/ 222                                                                                          
+ Tubeside             211/ 230                                                                                          
+Weight Fraction Vapor                                                                                                   
+ Shell  In              0.479                                                                                           
+        Out             0.000                                                                                           
+ Tube   In              0.000                                                                                           
+        Out             0.000                                                                                           
+                                                                                                                        
+* Performance Analysis **                                                                                               
+Percent Overdesign    100.000                                                                                           
+Required Area           2539.                                                                                           
+Required Heat Duty    112.4568                                                                                          
+Cond Mode (Center)    Trans                                                                                             
+Avg H.T. Coefficients                                                                                                   
+ Overall               5674.15                                                                                          
+ Shellside            13059.63                                                                                          
+ Tubeside             20042.54                                                                                          
+Avg Overall Delta T      0.00                                                                                           
+Shell Pressure Drop    426.78                                                                                           
+ Allowable               0.00                                                                                           
+Tube Pressure Drop     293.25                                                                                           
+ Allowable               0.00                                                                                           
+
