@@ -40,6 +40,6 @@ public class XistConnect {
                 process.destroy();
             }
         }
-        System.out.println(GetValue.getValue(output,"13",6));
+       // System.out.println(GetValue.getValue(output,"13",6));
     }
 }

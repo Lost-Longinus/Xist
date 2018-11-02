@@ -13,7 +13,7 @@ public class GetValue {
      * @param index 参数是该行第几个subString，from 0
      * @return 返回获取参数值，String
      */
-    public static String getValue(String path, String label, int index){
+    public String getValue(String path, String label, int index){
         try {
             File file = new File(path);
             FileReader reader = new FileReader(file);
